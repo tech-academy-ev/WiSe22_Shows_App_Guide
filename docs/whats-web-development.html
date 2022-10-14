@@ -1,0 +1,505 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 2 What’s web development? | Weather App Project SoSe22</title>
+  <meta name="description" content="Chapter 2 What’s web development? | Weather App Project SoSe22" />
+  <meta name="generator" content="bookdown 0.25 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 2 What’s web development? | Weather App Project SoSe22" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 2 What’s web development? | Weather App Project SoSe22" />
+  
+  
+  
+
+<meta name="author" content="TechAcademy e.V." />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="index.html"/>
+<link rel="next" href="tools.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Weather App Project</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction<span></span></a></li>
+<li class="chapter" data-level="2" data-path="whats-web-development.html"><a href="whats-web-development.html"><i class="fa fa-check"></i><b>2</b> What’s web development?<span></span></a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="whats-web-development.html"><a href="whats-web-development.html#how-to-use-this-section"><i class="fa fa-check"></i><b>2.1</b> How to use this section<span></span></a></li>
+<li class="chapter" data-level="2.2" data-path="whats-web-development.html"><a href="whats-web-development.html#html"><i class="fa fa-check"></i><b>2.2</b> HTML<span></span></a>
+<ul>
+<li><a href="whats-web-development.html#tags">Tags<span></span></a></li>
+<li><a href="whats-web-development.html#structure">Structure<span></span></a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="whats-web-development.html"><a href="whats-web-development.html#css"><i class="fa fa-check"></i><b>2.3</b> CSS<span></span></a>
+<ul>
+<li><a href="whats-web-development.html#syntax">Syntax<span></span></a></li>
+<li><a href="whats-web-development.html#common-properties">Common properties<span></span></a></li>
+<li><a href="whats-web-development.html#box-model">Box Model<span></span></a></li>
+<li><a href="whats-web-development.html#style.css">Style.css<span></span></a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="whats-web-development.html"><a href="whats-web-development.html#javascript"><i class="fa fa-check"></i><b>2.4</b> JavaScript<span></span></a>
+<ul>
+<li><a href="whats-web-development.html#code-samples">Code samples<span></span></a></li>
+<li><a href="whats-web-development.html#the-dom">The DOM<span></span></a></li>
+<li><a href="whats-web-development.html#script.js">Script.js<span></span></a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="tools.html"><a href="tools.html"><i class="fa fa-check"></i><b>3</b> Tools<span></span></a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="tools.html"><a href="tools.html#ide"><i class="fa fa-check"></i><b>3.1</b> IDE<span></span></a></li>
+<li class="chapter" data-level="3.2" data-path="tools.html"><a href="tools.html#udemy"><i class="fa fa-check"></i><b>3.2</b> Udemy<span></span></a></li>
+<li class="chapter" data-level="3.3" data-path="tools.html"><a href="tools.html#api"><i class="fa fa-check"></i><b>3.3</b> API<span></span></a>
+<ul>
+<li><a href="tools.html#how-do-we-get-the-data">How do we get the data?<span></span></a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="project.html"><a href="project.html"><i class="fa fa-check"></i><b>4</b> Project<span></span></a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="project.html"><a href="project.html#project-introduction"><i class="fa fa-check"></i><b>4.1</b> Project introduction<span></span></a></li>
+<li class="chapter" data-level="4.2" data-path="project.html"><a href="project.html#minimal-requirements"><i class="fa fa-check"></i><b>4.2</b> Minimal Requirements<span></span></a>
+<ul>
+<li><a href="project.html#search-bar-and-button">1. Search Bar and Button<span></span></a></li>
+<li><a href="project.html#api-call">2. API Call<span></span></a></li>
+<li><a href="project.html#city-information">3. City Information<span></span></a></li>
+<li><a href="project.html#forecast-information">4. Forecast Information<span></span></a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="project.html"><a href="project.html#curriculum"><i class="fa fa-check"></i><b>4.3</b> Curriculum<span></span></a>
+<ul>
+<li><a href="project.html#web-dev-coding-introduction">04.05.2022 - Web-Dev Coding Introduction<span></span></a></li>
+<li><a href="project.html#coding-meetup">18.05.2022 - 1. Coding Meetup<span></span></a></li>
+<li><a href="project.html#coding-meetup-1">01.06.2022 - 2. Coding Meetup<span></span></a></li>
+<li><a href="project.html#coding-meetup-2">15.06.2022 - 3. Coding Meetup<span></span></a></li>
+<li><a href="project.html#coding-meetup-3">29.06.2022 - 4. Coding Meetup<span></span></a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="additional-resources.html"><a href="additional-resources.html"><i class="fa fa-check"></i><b>5</b> Additional Resources<span></span></a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="additional-resources.html"><a href="additional-resources.html#git-and-github"><i class="fa fa-check"></i><b>5.1</b> Git and GitHub<span></span></a></li>
+<li class="chapter" data-level="5.2" data-path="additional-resources.html"><a href="additional-resources.html#json"><i class="fa fa-check"></i><b>5.2</b> JSON<span></span></a></li>
+<li class="chapter" data-level="5.3" data-path="additional-resources.html"><a href="additional-resources.html#font-awesome"><i class="fa fa-check"></i><b>5.3</b> Font Awesome<span></span></a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://tech-academy.io/" target="blank">&copy 2022 TechAcademy e.V.</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Weather App Project SoSe22</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="whats-web-development" class="section level1 hasAnchor" number="2">
+<h1><span class="header-section-number">Chapter 2</span> What’s web development?<a href="whats-web-development.html#whats-web-development" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>In short, web developers build and maintain websites.<br />
+Web developers often work for clients who are trying to get their product or service onto the web. The work is typically very project focused and involves collaborating with a team that helps to coordinate the client’s needs into the end product. The work could involve front-end, back-end, or full-stack web development.<br />
+In our course we will focus on front-end development. The front end is what you see when you open any website in your browser. At a basic level, front-end developers use HTML, CSS and JavaScript.</p>
+<div id="how-to-use-this-section" class="section level2 hasAnchor" number="2.1">
+<h2><span class="header-section-number">2.1</span> How to use this section<a href="whats-web-development.html#how-to-use-this-section" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>In the following we will briefly introduce HTML, CSS and JavaScript. Our intention here was not to go into every little detail there is (There have been whole books written about each of these!), but to give a broad overview of the different components and how they work together. The Udemy course will go over the concepts we outlay here and lots of additional content in more detail. Use this section as an appetizer and/or as a refresher to come back to once you’ve gone through the course.</p>
+</div>
+<div id="html" class="section level2 hasAnchor" number="2.2">
+<h2><span class="header-section-number">2.2</span> HTML<a href="whats-web-development.html#html" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>HTML, short for Hypertext Markup Language, is the raw data that a webpage is built out of. It allows you to structure the website through sections, paragraphs, headings and lets you create text, links, cards, lists, and buttons.</p>
+<div id="tags" class="section level3 unnumbered hasAnchor">
+<h3>Tags<a href="whats-web-development.html#tags" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The structure of a html file is very simple. Almost all elements are just pieces of content wrapped in opening and closing HTML tags. For example, you would write the title of a webpage like so:</p>
+<div class="sourceCode" id="cb1"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb1-1"><a href="whats-web-development.html#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;title&gt;</span>Document<span class="kw">&lt;/title&gt;</span>  </span></code></pre></div>
+<p>And while the current version of HTML (HTML5) contains <a href="https://www.w3schools.com/TAGS/default.ASP">140 different tags</a>, most webpages are made just out of a fraction of these. You’ve already seen the title tag, let’s quickly take a look at some more of those common ones. They are also the ones that you will most likely be using during your project.<br />
+- <code>&lt;html&gt;</code>: Must enclose the entire rest of the code<br />
+- <code>&lt;head&gt;</code>: Contains the title, the link to the css (styling) file and various other information<br />
+- <code>&lt;body&gt;</code>: Contains the contents of a website<br />
+- <code>&lt;p&gt;</code>: Paragraph, simple text belongs here<br />
+- <code>&lt;hX&gt;</code>: X is a number between 1 (large heading) and 6 (small heading)<br />
+- <code>&lt;div&gt;</code>: Structure that groups content inside<br />
+- <code>&lt;ul&gt;</code>: Unordered list containing list items <code>&lt;li&gt;</code><br />
+- <code>&lt;a&gt;</code>: Link tag, used to link from one website to the next<br />
+- <code>&lt;img&gt;</code>: An image in an HTML page<br />
+- <code>&lt;form&gt;</code>: To create an HTML form for user input<br />
+- <code>&lt;table&gt;</code>: Defines a table, containing rows <code>&lt;tr&gt;</code> and columns <code>&lt;td&gt;</code><br />
+- <code>&lt;button&gt;</code>: Create a clickable button</p>
+<p>To all of these tags you can add classes or id’s. An id has to be unique. Why would we do this!? We will get to that once we learn about CSS.</p>
+<div class="sourceCode" id="cb2"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb2-1"><a href="whats-web-development.html#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;div</span><span class="ot"> class=</span><span class="st">&quot;small-text&quot;</span><span class="kw">&gt;</span></span>
+<span id="cb2-2"><a href="whats-web-development.html#cb2-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;p</span><span class="ot"> id=</span><span class="st">&quot;first-line&quot;</span><span class="kw">&gt;</span>Name<span class="kw">&lt;/p&gt;</span></span>
+<span id="cb2-3"><a href="whats-web-development.html#cb2-3" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;p</span><span class="ot"> id=</span><span class="st">&quot;second-line&quot;</span><span class="kw">&gt;</span>Tom<span class="kw">&lt;/p&gt;</span></span>
+<span id="cb2-4"><a href="whats-web-development.html#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/div&gt;</span></span></code></pre></div>
+</div>
+<div id="structure" class="section level3 unnumbered hasAnchor">
+<h3>Structure<a href="whats-web-development.html#structure" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Now that you know the majority of the relevant tags the only question left to answer is how do we actually write HTML code. For that it is relevant that all HTML documents have the same boilerplate-like structure that needs to be in place before anything useful can be done. The boilerplate looks something like this and is often easily accessible with a shortcut (so you don’t have to type it all out everytime you create a new file):</p>
+<div class="sourceCode" id="cb3"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb3-1"><a href="whats-web-development.html#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;!DOCTYPE </span>html<span class="dt">&gt;</span></span>
+<span id="cb3-2"><a href="whats-web-development.html#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;html</span><span class="ot"> lang=</span><span class="st">&quot;en&quot;</span><span class="kw">&gt;</span></span>
+<span id="cb3-3"><a href="whats-web-development.html#cb3-3" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;head&gt;</span></span>
+<span id="cb3-4"><a href="whats-web-development.html#cb3-4" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;meta</span><span class="ot"> charset=</span><span class="st">&quot;UTF-8&quot;</span> <span class="kw">/&gt;</span></span>
+<span id="cb3-5"><a href="whats-web-development.html#cb3-5" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;title&gt;</span>Document<span class="kw">&lt;/title&gt;</span></span>
+<span id="cb3-6"><a href="whats-web-development.html#cb3-6" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;/head&gt;</span></span>
+<span id="cb3-7"><a href="whats-web-development.html#cb3-7" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;body&gt;</span></span>
+<span id="cb3-8"><a href="whats-web-development.html#cb3-8" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;/body&gt;</span></span>
+<span id="cb3-9"><a href="whats-web-development.html#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/html&gt;</span></span></code></pre></div>
+<p>All of the content, that appears on a webpage is written between the <code>&lt;body&gt;</code> tags.<br />
+So.. we know the basic structure and some HTML tags, but how and where do we write HTML Code? The answer is straight forward: We can write HTML Code anywhere! Even in a simple plain editor, as long as we save the code as .html we can view the results in the web-browser. But don’t worry, there are more handy choices that we will look at in the <a href="tools.html#tools">Tools Section</a>. Please note here, that we should always save the homepage of our websites as index.html. This is because web servers will by default look for an index.html page when users land on our websites - and not having one will cause big problems.</p>
+<p>Interesting reads<br />
+- <a href="https://css-tricks.com/average-web-page-data-analyzing-8-million-websites/">The most used HTML tags (8 million website analyzed)</a></p>
+</div>
+</div>
+<div id="css" class="section level2 hasAnchor" number="2.3">
+<h2><span class="header-section-number">2.3</span> CSS<a href="whats-web-development.html#css" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Now we have a structure for the contents of a website, but to be frank: that looks horrible. The next step is to make that structure look good with some style, which is exactly what CSS, short for Cascading Style Sheets, is for. Using CSS, you can control the color of the text, the style of fonts, the spacing between paragraphs, how columns are sized and laid out, what background images or colors are used, layout designs, variations in display for different devices and screen sizes as well as a variety of other effects.</p>
+<div id="syntax" class="section level3 unnumbered hasAnchor">
+<h3>Syntax<a href="whats-web-development.html#syntax" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>The CSS Syntax is as straight forward as it was the case with HTML. It is a rule-based syntax and every rule is made up of a selector and a semi-colon separated list of property:value pairs.</p>
+<center>
+<p><img src="docs/assets/css_example.png" /></p>
+</center>
+<p>Let’s go over how selectors work so you can get a feel for fit. If the goal is to style all elements of the same type in a certain way, simply reference the tag.</p>
+<div class="sourceCode" id="cb4"><pre class="sourceCode css"><code class="sourceCode css"><span id="cb4-1"><a href="whats-web-development.html#cb4-1" aria-hidden="true" tabindex="-1"></a>h1 {</span>
+<span id="cb4-2"><a href="whats-web-development.html#cb4-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">color</span>: <span class="cn">black</span><span class="op">;</span></span>
+<span id="cb4-3"><a href="whats-web-development.html#cb4-3" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<style type="text/css">
+h1 {
+  color: black;
+}
+</style>
+<p>If you want to style multiple elements, that may be of different types, you use dot-notation and add a class to the element in HTML.</p>
+<div class="sourceCode" id="cb5"><pre class="sourceCode css important"><code class="sourceCode css"><span id="cb5-1"><a href="whats-web-development.html#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">.bold-text</span> {                           </span>
+<span id="cb5-2"><a href="whats-web-development.html#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">font-weight</span>: <span class="dv">bold</span></span>
+<span id="cb5-3"><a href="whats-web-development.html#cb5-3" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<style type="text/css">
+.bold-text {                           
+  font-weight: bold
+}
+</style>
+<p>If you only want to style one element, you use the hashtag-notation and add an id to the element in HTML.</p>
+<div class="sourceCode" id="cb6"><pre class="sourceCode css important"><code class="sourceCode css"><span id="cb6-1"><a href="whats-web-development.html#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="pp">#header</span> {                           </span>
+<span id="cb6-2"><a href="whats-web-development.html#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="kw">font-size</span>: <span class="dv">x-large</span><span class="op">;</span></span>
+<span id="cb6-3"><a href="whats-web-development.html#cb6-3" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+<style type="text/css">
+#header {                           
+  font-size: x-large;
+}
+</style>
+</div>
+<div id="common-properties" class="section level3 unnumbered hasAnchor">
+<h3>Common properties<a href="whats-web-development.html#common-properties" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Now, let’s check out the properties that you will encounter most often.</p>
+<ul>
+<li><code>width</code>: specifies the width of the element’s content area<br />
+</li>
+<li><code>height</code>: specifies the height of the element’s content area<br />
+</li>
+<li><code>color</code>: defines the color of text, can be named, rgb(a) or hex value<br />
+</li>
+<li><code>background-color</code>: sets the background color<br />
+</li>
+<li><code>border</code>: specifies what kind of border to display<br />
+</li>
+<li><code>outline</code>: similar to border, but within the elements “box”<br />
+</li>
+<li><code>font-size</code>: Sets size of font (small, large..)<br />
+</li>
+<li><code>font-weight</code>: Sets weight of font (bold, italic..)<br />
+</li>
+<li><code>font-family</code>: Sets font style (arial, times…)<br />
+</li>
+<li><code>margin</code>: distance from the border of one element to the border of the other element<br />
+</li>
+<li><code>padding</code>: distance from border to the content of the element</li>
+</ul>
+</div>
+<div id="box-model" class="section level3 unnumbered hasAnchor">
+<h3>Box Model<a href="whats-web-development.html#box-model" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>CSS is based on the so-called box model: every element is a box. The content inside the element is a box, surrounded by the padding, surrounded by the border and surrounded by the margin.</p>
+<center>
+<p><img src="docs/assets/box-model.png" /></p>
+</center>
+<p>This schematic can also be found in every modern web browser. Simply open your favorite website in a new window, right click and then select „inspect“. This will open the „developer tools“ and allow you to check out the content of a page. With these developer tools, you can also alter the content of a website directly in the browser! However beware, these changes will not be saved and a reload will get rid of them.</p>
+<p><img src="docs/assets/ta-website.png" /></p>
+</div>
+<div id="style.css" class="section level3 unnumbered hasAnchor">
+<h3>Style.css<a href="whats-web-development.html#style.css" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Great, now you know alot about CSS, but how can we combine it with our HTML code? There are several way’s that you’ll come across, but the most common way is to create a new file, by convention often named style.css, and put all our css code there. Afterwards we only have to link our created file in the head section of the html page and we are all set. For that to work, these files have to be in the same folder.</p>
+<div class="sourceCode" id="cb7"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb7-1"><a href="whats-web-development.html#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;!DOCTYPE </span>html<span class="dt">&gt;</span></span>
+<span id="cb7-2"><a href="whats-web-development.html#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;html</span><span class="ot"> lang=</span><span class="st">&quot;en&quot;</span><span class="kw">&gt;</span></span>
+<span id="cb7-3"><a href="whats-web-development.html#cb7-3" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;head&gt;</span></span>
+<span id="cb7-4"><a href="whats-web-development.html#cb7-4" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;meta</span><span class="ot"> charset=</span><span class="st">&quot;UTF-8&quot;</span> <span class="kw">/&gt;</span></span>
+<span id="cb7-5"><a href="whats-web-development.html#cb7-5" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;title&gt;</span>Document<span class="kw">&lt;/title&gt;</span></span>
+<span id="cb7-6"><a href="whats-web-development.html#cb7-6" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;link</span><span class="ot"> rel=</span><span class="st">&quot;stylesheet&quot;</span><span class="ot"> href=</span><span class="st">&quot;style.css&quot;</span> <span class="kw">/&gt;</span></span>
+<span id="cb7-7"><a href="whats-web-development.html#cb7-7" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;/head&gt;</span></span>
+<span id="cb7-8"><a href="whats-web-development.html#cb7-8" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;body&gt;</span>...<span class="kw">&lt;/body&gt;</span></span>
+<span id="cb7-9"><a href="whats-web-development.html#cb7-9" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/html&gt;</span></span></code></pre></div>
+<p>Interesting reads:<br />
+- <a href="https://www.w3schools.com/css/css_boxmodel.asp">The Box Model - test your box model skills with exercises</a><br />
+- <a href="https://developer.mozilla.org/en-US/docs/Learn/CSS/Building_blocks/The_box_model">The Box Model on MDN (check out the sidebar aswell!)</a></p>
+</div>
+</div>
+<div id="javascript" class="section level2 hasAnchor" number="2.4">
+<h2><span class="header-section-number">2.4</span> JavaScript<a href="whats-web-development.html#javascript" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Let’s dive in to JavaScript now! The JavaScript code that we will be writing during this semester will be run via the browser. As described in the last part on CSS, you can open the developer tools of your browser. There you’ll also find the console. You can type any JavaScript command you like into the console, run it, and the browser will interpret the code for you. Let’s try a few examples:</p>
+<center>
+<p><img src="docs/assets/console.png" /></p>
+</center>
+<div id="code-samples" class="section level3 unnumbered hasAnchor">
+<h3>Code samples<a href="whats-web-development.html#code-samples" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Let’s go over some more code. Feel free to type along in your console.</p>
+<div class="sourceCode" id="cb8"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb8-1"><a href="whats-web-development.html#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="co">/* Variables */</span></span>
+<span id="cb8-2"><a href="whats-web-development.html#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="kw">let</span> a <span class="op">=</span> <span class="st">&quot;hello&quot;</span><span class="op">;</span> <span class="co">/* Variables are simply storage containers */</span></span>
+<span id="cb8-3"><a href="whats-web-development.html#cb8-3" aria-hidden="true" tabindex="-1"></a>a <span class="op">=</span> <span class="st">&quot;bye&quot;</span><span class="op">;</span>       <span class="co">/* You use let to declare them if you expect the value to change */</span></span>
+<span id="cb8-4"><a href="whats-web-development.html#cb8-4" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> size <span class="op">=</span> <span class="dv">10</span><span class="op">;</span> <span class="co">/* You use const if you dont expect the value to change */</span></span>
+<span id="cb8-5"><a href="whats-web-development.html#cb8-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-6"><a href="whats-web-development.html#cb8-6" aria-hidden="true" tabindex="-1"></a><span class="co">/* Primitive data types (boolean, string, number) */</span></span>
+<span id="cb8-7"><a href="whats-web-development.html#cb8-7" aria-hidden="true" tabindex="-1"></a><span class="kw">let</span> isHouseEmpty <span class="op">=</span> <span class="kw">false</span><span class="op">;</span>             <span class="co">/* This is a boolean value and can either be true or false */</span></span>
+<span id="cb8-8"><a href="whats-web-development.html#cb8-8" aria-hidden="true" tabindex="-1"></a><span class="kw">let</span> ourOrganisation <span class="op">=</span> <span class="st">&quot;Tech Academy&quot;</span><span class="op">;</span> <span class="co">/* This is a string value */</span></span>
+<span id="cb8-9"><a href="whats-web-development.html#cb8-9" aria-hidden="true" tabindex="-1"></a><span class="kw">let</span> participants <span class="op">=</span> <span class="dv">95</span>  <span class="op">;</span>              <span class="co">/* This is a number value */</span></span>
+<span id="cb8-10"><a href="whats-web-development.html#cb8-10" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-11"><a href="whats-web-development.html#cb8-11" aria-hidden="true" tabindex="-1"></a><span class="co">/* Compound data types (arrays, objects) */</span></span>
+<span id="cb8-12"><a href="whats-web-development.html#cb8-12" aria-hidden="true" tabindex="-1"></a><span class="kw">let</span> myArray <span class="op">=</span> [<span class="dv">1</span><span class="op">,</span><span class="dv">2</span><span class="op">,</span><span class="dv">3</span><span class="op">,</span><span class="dv">4</span><span class="op">,</span><span class="dv">5</span><span class="op">,</span><span class="dv">6</span><span class="op">,</span><span class="dv">7</span><span class="op">,</span><span class="dv">8</span><span class="op">,</span><span class="dv">9</span><span class="op">,</span><span class="dv">10</span>]<span class="op">;</span>                  <span class="co">/* This is an array, consisting of 10 numbers, you can get the first entry like this: myArray[0] */</span></span>
+<span id="cb8-13"><a href="whats-web-development.html#cb8-13" aria-hidden="true" tabindex="-1"></a><span class="kw">let</span> myObject <span class="op">=</span> {<span class="dt">name</span><span class="op">:</span> <span class="st">&quot;Sebastian&quot;</span><span class="op">,</span> <span class="dt">position</span><span class="op">:</span> <span class="st">&quot;Tutor&quot;</span>}<span class="op">;</span> <span class="co">/* This is an object, to display the name you would type myObject.name */</span></span>
+<span id="cb8-14"><a href="whats-web-development.html#cb8-14" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-15"><a href="whats-web-development.html#cb8-15" aria-hidden="true" tabindex="-1"></a><span class="co">/* Console.log */</span></span>
+<span id="cb8-16"><a href="whats-web-development.html#cb8-16" aria-hidden="true" tabindex="-1"></a><span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(<span class="st">&quot;Hello World!&quot;</span>)<span class="op">;</span> <span class="co">/* With console.log() we can print directly to the console. This is very handy to figure out if something&#39;s going wrong */</span></span>
+<span id="cb8-17"><a href="whats-web-development.html#cb8-17" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-18"><a href="whats-web-development.html#cb8-18" aria-hidden="true" tabindex="-1"></a><span class="co">/* If statement */</span></span>
+<span id="cb8-19"><a href="whats-web-development.html#cb8-19" aria-hidden="true" tabindex="-1"></a><span class="kw">let</span> grade <span class="op">=</span> <span class="fl">1.7</span><span class="op">;</span> <span class="co">/* We declare a variable &quot;grade&quot; and store the value 1.7 in it */</span></span>
+<span id="cb8-20"><a href="whats-web-development.html#cb8-20" aria-hidden="true" tabindex="-1"></a><span class="cf">if</span> (grade <span class="op">&lt;</span> <span class="fl">2.0</span>) { <span class="co">/* Our code checks if grade is less than 2.0 */</span></span>
+<span id="cb8-21"><a href="whats-web-development.html#cb8-21" aria-hidden="true" tabindex="-1"></a>  <span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(<span class="st">&quot;Wow, impressive!&quot;</span>)<span class="op">;</span> <span class="co">/* If that&#39;s the case &#39;Wow, impressive!&#39; is the output in the console */</span></span>
+<span id="cb8-22"><a href="whats-web-development.html#cb8-22" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb8-23"><a href="whats-web-development.html#cb8-23" aria-hidden="true" tabindex="-1"></a><span class="cf">else</span> {</span>
+<span id="cb8-24"><a href="whats-web-development.html#cb8-24" aria-hidden="true" tabindex="-1"></a>  <span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(<span class="st">&quot;Don&#39;t worry!&quot;</span>)<span class="op">;</span> <span class="co">/* If not, &#39;Dont&#39;t worry!&#39; is the output */</span></span>
+<span id="cb8-25"><a href="whats-web-development.html#cb8-25" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb8-26"><a href="whats-web-development.html#cb8-26" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-27"><a href="whats-web-development.html#cb8-27" aria-hidden="true" tabindex="-1"></a><span class="co">/* For loop */</span></span>
+<span id="cb8-28"><a href="whats-web-development.html#cb8-28" aria-hidden="true" tabindex="-1"></a><span class="kw">let</span> myNumbers <span class="op">=</span> [<span class="dv">1</span><span class="op">,</span><span class="dv">2</span><span class="op">,</span><span class="dv">3</span><span class="op">,</span><span class="dv">4</span><span class="op">,</span><span class="dv">5</span>]<span class="op">;</span></span>
+<span id="cb8-29"><a href="whats-web-development.html#cb8-29" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (<span class="kw">let</span> number <span class="kw">of</span> myNumbers) {</span>
+<span id="cb8-30"><a href="whats-web-development.html#cb8-30" aria-hidden="true" tabindex="-1"></a>  <span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(number)<span class="op">;</span> <span class="co">/* Every number of myNumbers will be printed in a seperate line */</span></span>
+<span id="cb8-31"><a href="whats-web-development.html#cb8-31" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb8-32"><a href="whats-web-development.html#cb8-32" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb8-33"><a href="whats-web-development.html#cb8-33" aria-hidden="true" tabindex="-1"></a><span class="co">/* While loop */</span></span>
+<span id="cb8-34"><a href="whats-web-development.html#cb8-34" aria-hidden="true" tabindex="-1"></a><span class="kw">let</span> a <span class="op">=</span> <span class="dv">90</span><span class="op">;</span></span>
+<span id="cb8-35"><a href="whats-web-development.html#cb8-35" aria-hidden="true" tabindex="-1"></a><span class="cf">while</span> (a <span class="op">&gt;=</span> <span class="dv">50</span>) {</span>
+<span id="cb8-36"><a href="whats-web-development.html#cb8-36" aria-hidden="true" tabindex="-1"></a>  a <span class="op">-=</span> <span class="dv">10</span><span class="op">;</span>  <span class="co">/* Our variable a will decrement by 10 as long as a is larger than 50 */</span></span>
+<span id="cb8-37"><a href="whats-web-development.html#cb8-37" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+</div>
+<div id="the-dom" class="section level3 unnumbered hasAnchor">
+<h3>The DOM<a href="whats-web-development.html#the-dom" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Now I bet you’re asking how does this all link up to HTML and CSS? The DOM, or document object, is where it all comes together. The DOM is the most important object in JavaScript - it’s the JavaScript representation of the structure of our HTML and is present in the variable document, when we load the page. Through the dom we can search through the document object,</p>
+<div class="sourceCode" id="cb9"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb9-1"><a href="whats-web-development.html#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> header <span class="op">=</span> <span class="bu">document</span><span class="op">.</span><span class="fu">getElementById</span>(<span class="st">&quot;header&quot;</span>)<span class="op">;</span></span></code></pre></div>
+<p>add event listeners, that specify an action everytime the element is clicked on</p>
+<div class="sourceCode" id="cb10"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb10-1"><a href="whats-web-development.html#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> button <span class="op">=</span> <span class="bu">document</span><span class="op">.</span><span class="fu">getElementById</span>(<span class="st">&quot;login-button&quot;</span>)<span class="op">;</span></span>
+<span id="cb10-2"><a href="whats-web-development.html#cb10-2" aria-hidden="true" tabindex="-1"></a>button<span class="op">.</span><span class="fu">addEventListener</span>(<span class="st">&quot;click&quot;</span><span class="op">,</span> () <span class="kw">=&gt;</span> {</span>
+<span id="cb10-3"><a href="whats-web-development.html#cb10-3" aria-hidden="true" tabindex="-1"></a>  <span class="co">/* check if the user&#39;s credentials were valid */</span></span>
+<span id="cb10-4"><a href="whats-web-development.html#cb10-4" aria-hidden="true" tabindex="-1"></a>})</span></code></pre></div>
+<p>and even change the style of our elements dynamically!</p>
+<div class="sourceCode" id="cb11"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb11-1"><a href="whats-web-development.html#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="kw">const</span> button <span class="op">=</span> <span class="bu">document</span><span class="op">.</span><span class="fu">getElementById</span>(<span class="st">&quot;login-button&quot;</span>)<span class="op">;</span></span>
+<span id="cb11-2"><a href="whats-web-development.html#cb11-2" aria-hidden="true" tabindex="-1"></a>button<span class="op">.</span><span class="at">style</span><span class="op">.</span><span class="at">color</span> <span class="op">=</span> <span class="st">&quot;red&quot;</span><span class="op">;</span></span></code></pre></div>
+</div>
+<div id="script.js" class="section level3 unnumbered hasAnchor">
+<h3>Script.js<a href="whats-web-development.html#script.js" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Obviously it doesn’t make sense to keep going in the browser as none of the code will persist. Similar to CSS, the most common approach is to add a new file, often named script.js and to place a script tag at the end of our HTML code to link to that file. The updated boilerplate will look like this:</p>
+<div class="sourceCode" id="cb12"><pre class="sourceCode html"><code class="sourceCode html"><span id="cb12-1"><a href="whats-web-development.html#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="dt">&lt;!DOCTYPE </span>html<span class="dt">&gt;</span></span>
+<span id="cb12-2"><a href="whats-web-development.html#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;html</span><span class="ot"> lang=</span><span class="st">&quot;en&quot;</span><span class="kw">&gt;</span></span>
+<span id="cb12-3"><a href="whats-web-development.html#cb12-3" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;head&gt;</span></span>
+<span id="cb12-4"><a href="whats-web-development.html#cb12-4" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;meta</span><span class="ot"> charset=</span><span class="st">&quot;UTF-8&quot;</span> <span class="kw">/&gt;</span></span>
+<span id="cb12-5"><a href="whats-web-development.html#cb12-5" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;title&gt;</span>Document<span class="kw">&lt;/title&gt;</span></span>
+<span id="cb12-6"><a href="whats-web-development.html#cb12-6" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;link</span><span class="ot"> rel=</span><span class="st">&quot;stylesheet&quot;</span><span class="ot"> href=</span><span class="st">&quot;style.css&quot;</span> <span class="kw">/&gt;</span></span>
+<span id="cb12-7"><a href="whats-web-development.html#cb12-7" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;/head&gt;</span></span>
+<span id="cb12-8"><a href="whats-web-development.html#cb12-8" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;body&gt;</span></span>
+<span id="cb12-9"><a href="whats-web-development.html#cb12-9" aria-hidden="true" tabindex="-1"></a>    <span class="co">&lt;!-- All the HTML code comes before the script tag --&gt;</span></span>
+<span id="cb12-10"><a href="whats-web-development.html#cb12-10" aria-hidden="true" tabindex="-1"></a>    <span class="kw">&lt;script</span><span class="ot"> src=</span><span class="st">&quot;script.js&quot;</span><span class="kw">&gt;&lt;/script&gt;</span></span>
+<span id="cb12-11"><a href="whats-web-development.html#cb12-11" aria-hidden="true" tabindex="-1"></a>  <span class="kw">&lt;/body&gt;</span></span>
+<span id="cb12-12"><a href="whats-web-development.html#cb12-12" aria-hidden="true" tabindex="-1"></a><span class="kw">&lt;/html&gt;</span></span></code></pre></div>
+<p>Want more practice? As a perfect supplement for the lessons in the Udemy course we recommend <a href="https://learnjavascript.online/">this website</a> as it will allow you to practice JS hands on. After all, programming is not learned through tutorials, but by applying it yourself. We also highly encourage you to code along the instructor, Colt Steele, as this will further increase learning-speed.</p>
+<p>Interesting reads:<br />
+- <a href="https://medium.com/@_benaston/lesson-1a-the-history-of-javascript-8c1ce3bffb17">The History of JavaScript</a><br />
+- <a href="https://javascript.info/intro">A (different) introduction to JavaScript</a><br />
+- <a href="https://javascript.info/function-basics">Functions in JavaScript</a></p>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="index.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="tools.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["weather_app.pdf"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection",
+"download": "pdf"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

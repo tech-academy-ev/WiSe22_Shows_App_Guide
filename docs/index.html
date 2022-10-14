@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Weather App Project SoSe22</title>
+  <meta name="description" content="Weather App Project SoSe22" />
+  <meta name="generator" content="bookdown 0.25 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Weather App Project SoSe22" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Weather App Project SoSe22" />
+  
+  
+  
+
+<meta name="author" content="TechAcademy e.V." />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+
+<link rel="next" href="whats-web-development.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Weather App Project</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction<span></span></a></li>
+<li class="chapter" data-level="2" data-path="whats-web-development.html"><a href="whats-web-development.html"><i class="fa fa-check"></i><b>2</b> What’s web development?<span></span></a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="whats-web-development.html"><a href="whats-web-development.html#how-to-use-this-section"><i class="fa fa-check"></i><b>2.1</b> How to use this section<span></span></a></li>
+<li class="chapter" data-level="2.2" data-path="whats-web-development.html"><a href="whats-web-development.html#html"><i class="fa fa-check"></i><b>2.2</b> HTML<span></span></a>
+<ul>
+<li><a href="whats-web-development.html#tags">Tags<span></span></a></li>
+<li><a href="whats-web-development.html#structure">Structure<span></span></a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="whats-web-development.html"><a href="whats-web-development.html#css"><i class="fa fa-check"></i><b>2.3</b> CSS<span></span></a>
+<ul>
+<li><a href="whats-web-development.html#syntax">Syntax<span></span></a></li>
+<li><a href="whats-web-development.html#common-properties">Common properties<span></span></a></li>
+<li><a href="whats-web-development.html#box-model">Box Model<span></span></a></li>
+<li><a href="whats-web-development.html#style.css">Style.css<span></span></a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="whats-web-development.html"><a href="whats-web-development.html#javascript"><i class="fa fa-check"></i><b>2.4</b> JavaScript<span></span></a>
+<ul>
+<li><a href="whats-web-development.html#code-samples">Code samples<span></span></a></li>
+<li><a href="whats-web-development.html#the-dom">The DOM<span></span></a></li>
+<li><a href="whats-web-development.html#script.js">Script.js<span></span></a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="tools.html"><a href="tools.html"><i class="fa fa-check"></i><b>3</b> Tools<span></span></a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="tools.html"><a href="tools.html#ide"><i class="fa fa-check"></i><b>3.1</b> IDE<span></span></a></li>
+<li class="chapter" data-level="3.2" data-path="tools.html"><a href="tools.html#udemy"><i class="fa fa-check"></i><b>3.2</b> Udemy<span></span></a></li>
+<li class="chapter" data-level="3.3" data-path="tools.html"><a href="tools.html#api"><i class="fa fa-check"></i><b>3.3</b> API<span></span></a>
+<ul>
+<li><a href="tools.html#how-do-we-get-the-data">How do we get the data?<span></span></a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="project.html"><a href="project.html"><i class="fa fa-check"></i><b>4</b> Project<span></span></a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="project.html"><a href="project.html#project-introduction"><i class="fa fa-check"></i><b>4.1</b> Project introduction<span></span></a></li>
+<li class="chapter" data-level="4.2" data-path="project.html"><a href="project.html#minimal-requirements"><i class="fa fa-check"></i><b>4.2</b> Minimal Requirements<span></span></a>
+<ul>
+<li><a href="project.html#search-bar-and-button">1. Search Bar and Button<span></span></a></li>
+<li><a href="project.html#api-call">2. API Call<span></span></a></li>
+<li><a href="project.html#city-information">3. City Information<span></span></a></li>
+<li><a href="project.html#forecast-information">4. Forecast Information<span></span></a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="project.html"><a href="project.html#curriculum"><i class="fa fa-check"></i><b>4.3</b> Curriculum<span></span></a>
+<ul>
+<li><a href="project.html#web-dev-coding-introduction">04.05.2022 - Web-Dev Coding Introduction<span></span></a></li>
+<li><a href="project.html#coding-meetup">18.05.2022 - 1. Coding Meetup<span></span></a></li>
+<li><a href="project.html#coding-meetup-1">01.06.2022 - 2. Coding Meetup<span></span></a></li>
+<li><a href="project.html#coding-meetup-2">15.06.2022 - 3. Coding Meetup<span></span></a></li>
+<li><a href="project.html#coding-meetup-3">29.06.2022 - 4. Coding Meetup<span></span></a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="additional-resources.html"><a href="additional-resources.html"><i class="fa fa-check"></i><b>5</b> Additional Resources<span></span></a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="additional-resources.html"><a href="additional-resources.html#git-and-github"><i class="fa fa-check"></i><b>5.1</b> Git and GitHub<span></span></a></li>
+<li class="chapter" data-level="5.2" data-path="additional-resources.html"><a href="additional-resources.html#json"><i class="fa fa-check"></i><b>5.2</b> JSON<span></span></a></li>
+<li class="chapter" data-level="5.3" data-path="additional-resources.html"><a href="additional-resources.html#font-awesome"><i class="fa fa-check"></i><b>5.3</b> Font Awesome<span></span></a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://tech-academy.io/" target="blank">&copy 2022 TechAcademy e.V.</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Weather App Project SoSe22</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="header">
+<h1 class="title">Weather App Project SoSe22</h1>
+<p class="author"><em>TechAcademy e.V.</em></p>
+<p class="date"><em>Summer Term 2022</em></p>
+</div>
+<div id="introduction" class="section level1 hasAnchor" number="1">
+<h1><span class="header-section-number">Chapter 1</span> Introduction<a href="index.html#introduction" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<p>Welcome to the Web Development program for the summer term of 2022! We are very excited to have you here. In these first paragraphs we want to briefly introduce our program and give you an overview of what to expect in the following months as well as lay out the content of this guideline. We will help and guide you along the way to the best of our abilities and hope we can share some of that fascination that got us into programming with you!</p>
+<p>Over the next months, there will be a total of four Coding Meetups, spaced out evenly where you will have the ability to meet your peers, work together on our application and ask questions to your mentors. In preparation we partnered up with Udemy and thus you have free access to the ultimate Web Development Bootcamp course. Everything you will learn there, you can later use within your own project and solidify your knowledge. We will go over the course and establish a timeframe on how far you should have progressed before each meetup later on. Feel free to sprint ahead on your own though, we are only laying out the minimal requirements here.</p>
+<p>In your project, you can work in groups of up to four team members. You can choose your teammates independently and we will not interfere with your arrangements. It is however beneficial, that all group members have approximately the same level of knowledge. We explicitly encourage you to collaborate with students from different university faculties. This not only allows you to get to know people from other faculties, but may also give you a whole new perspective on the project and tasks. When submitting your project please note: for a certificate, each person must submit the project individually. However, hand-ins may be similar within your group. You can get more information at our first Coding Meetup on <strong>May 18, 2022.</strong></p>
+<p>So.. what is our project? For this term, we have decided to let you create a weather-app. You’ve seen them countless times on various websites and may use your favorite one every day to check if you have to put on a raincoat or sunscreen. But how does the data get to the website? How does it update with every refresh and how can one make look that all appealing to an audience? These are all questions that we will tackle in this semester.</p>
+<p>This project guide was developed and written by the Web Development team at TechAcademy: <a href="https://www.linkedin.com/in/sebastian-hönig/">Sebastian Hönig</a>, <a href="https://www.linkedin.com/in/tburakonat/">Burak Onat</a> and Tilo Flasche. Special thanks also to Ben Lucht, Feron Basoeki and Tom Schwitzkowski who were responsible for the Web Development course in the past.</p>
+
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+
+<a href="whats-web-development.html" class="navigation navigation-next navigation-unique" aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["weather_app.pdf"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection",
+"download": "pdf"
+}
+});
+});
+</script>
+
+</body>
+
+</html>

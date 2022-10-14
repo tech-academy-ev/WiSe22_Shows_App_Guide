@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="" xml:lang="">
+<head>
+
+  <meta charset="utf-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <title>Chapter 3 Tools | Weather App Project SoSe22</title>
+  <meta name="description" content="Chapter 3 Tools | Weather App Project SoSe22" />
+  <meta name="generator" content="bookdown 0.25 and GitBook 2.6.7" />
+
+  <meta property="og:title" content="Chapter 3 Tools | Weather App Project SoSe22" />
+  <meta property="og:type" content="book" />
+  
+  
+  
+
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Chapter 3 Tools | Weather App Project SoSe22" />
+  
+  
+  
+
+<meta name="author" content="TechAcademy e.V." />
+
+
+
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  
+  
+<link rel="prev" href="whats-web-development.html"/>
+<link rel="next" href="project.html"/>
+<script src="libs/jquery-3.6.0/jquery-3.6.0.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/fuse.js@6.4.6/dist/fuse.min.js"></script>
+<link href="libs/gitbook-2.6.7/css/style.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-table.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-bookdown.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-highlight.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-search.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-fontsettings.css" rel="stylesheet" />
+<link href="libs/gitbook-2.6.7/css/plugin-clipboard.css" rel="stylesheet" />
+
+
+
+
+
+
+
+
+<link href="libs/anchor-sections-1.1.0/anchor-sections.css" rel="stylesheet" />
+<link href="libs/anchor-sections-1.1.0/anchor-sections-hash.css" rel="stylesheet" />
+<script src="libs/anchor-sections-1.1.0/anchor-sections.js"></script>
+
+
+<style type="text/css">
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+    color: #aaaaaa;
+  }
+pre.numberSource { margin-left: 3em; border-left: 1px solid #aaaaaa;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
+code span.al { color: #ff0000; font-weight: bold; } /* Alert */
+code span.an { color: #60a0b0; font-weight: bold; font-style: italic; } /* Annotation */
+code span.at { color: #7d9029; } /* Attribute */
+code span.bn { color: #40a070; } /* BaseN */
+code span.bu { } /* BuiltIn */
+code span.cf { color: #007020; font-weight: bold; } /* ControlFlow */
+code span.ch { color: #4070a0; } /* Char */
+code span.cn { color: #880000; } /* Constant */
+code span.co { color: #60a0b0; font-style: italic; } /* Comment */
+code span.cv { color: #60a0b0; font-weight: bold; font-style: italic; } /* CommentVar */
+code span.do { color: #ba2121; font-style: italic; } /* Documentation */
+code span.dt { color: #902000; } /* DataType */
+code span.dv { color: #40a070; } /* DecVal */
+code span.er { color: #ff0000; font-weight: bold; } /* Error */
+code span.ex { } /* Extension */
+code span.fl { color: #40a070; } /* Float */
+code span.fu { color: #06287e; } /* Function */
+code span.im { } /* Import */
+code span.in { color: #60a0b0; font-weight: bold; font-style: italic; } /* Information */
+code span.kw { color: #007020; font-weight: bold; } /* Keyword */
+code span.op { color: #666666; } /* Operator */
+code span.ot { color: #007020; } /* Other */
+code span.pp { color: #bc7a00; } /* Preprocessor */
+code span.sc { color: #4070a0; } /* SpecialChar */
+code span.ss { color: #bb6688; } /* SpecialString */
+code span.st { color: #4070a0; } /* String */
+code span.va { color: #19177c; } /* Variable */
+code span.vs { color: #4070a0; } /* VerbatimString */
+code span.wa { color: #60a0b0; font-weight: bold; font-style: italic; } /* Warning */
+</style>
+
+
+<link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+
+<body>
+
+
+
+  <div class="book without-animation with-summary font-size-2 font-family-1" data-basepath=".">
+
+    <div class="book-summary">
+      <nav role="navigation">
+
+<ul class="summary">
+<li><a href="./">Weather App Project</a></li>
+
+<li class="divider"></li>
+<li class="chapter" data-level="1" data-path="index.html"><a href="index.html"><i class="fa fa-check"></i><b>1</b> Introduction<span></span></a></li>
+<li class="chapter" data-level="2" data-path="whats-web-development.html"><a href="whats-web-development.html"><i class="fa fa-check"></i><b>2</b> What’s web development?<span></span></a>
+<ul>
+<li class="chapter" data-level="2.1" data-path="whats-web-development.html"><a href="whats-web-development.html#how-to-use-this-section"><i class="fa fa-check"></i><b>2.1</b> How to use this section<span></span></a></li>
+<li class="chapter" data-level="2.2" data-path="whats-web-development.html"><a href="whats-web-development.html#html"><i class="fa fa-check"></i><b>2.2</b> HTML<span></span></a>
+<ul>
+<li><a href="whats-web-development.html#tags">Tags<span></span></a></li>
+<li><a href="whats-web-development.html#structure">Structure<span></span></a></li>
+</ul></li>
+<li class="chapter" data-level="2.3" data-path="whats-web-development.html"><a href="whats-web-development.html#css"><i class="fa fa-check"></i><b>2.3</b> CSS<span></span></a>
+<ul>
+<li><a href="whats-web-development.html#syntax">Syntax<span></span></a></li>
+<li><a href="whats-web-development.html#common-properties">Common properties<span></span></a></li>
+<li><a href="whats-web-development.html#box-model">Box Model<span></span></a></li>
+<li><a href="whats-web-development.html#style.css">Style.css<span></span></a></li>
+</ul></li>
+<li class="chapter" data-level="2.4" data-path="whats-web-development.html"><a href="whats-web-development.html#javascript"><i class="fa fa-check"></i><b>2.4</b> JavaScript<span></span></a>
+<ul>
+<li><a href="whats-web-development.html#code-samples">Code samples<span></span></a></li>
+<li><a href="whats-web-development.html#the-dom">The DOM<span></span></a></li>
+<li><a href="whats-web-development.html#script.js">Script.js<span></span></a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="3" data-path="tools.html"><a href="tools.html"><i class="fa fa-check"></i><b>3</b> Tools<span></span></a>
+<ul>
+<li class="chapter" data-level="3.1" data-path="tools.html"><a href="tools.html#ide"><i class="fa fa-check"></i><b>3.1</b> IDE<span></span></a></li>
+<li class="chapter" data-level="3.2" data-path="tools.html"><a href="tools.html#udemy"><i class="fa fa-check"></i><b>3.2</b> Udemy<span></span></a></li>
+<li class="chapter" data-level="3.3" data-path="tools.html"><a href="tools.html#api"><i class="fa fa-check"></i><b>3.3</b> API<span></span></a>
+<ul>
+<li><a href="tools.html#how-do-we-get-the-data">How do we get the data?<span></span></a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="4" data-path="project.html"><a href="project.html"><i class="fa fa-check"></i><b>4</b> Project<span></span></a>
+<ul>
+<li class="chapter" data-level="4.1" data-path="project.html"><a href="project.html#project-introduction"><i class="fa fa-check"></i><b>4.1</b> Project introduction<span></span></a></li>
+<li class="chapter" data-level="4.2" data-path="project.html"><a href="project.html#minimal-requirements"><i class="fa fa-check"></i><b>4.2</b> Minimal Requirements<span></span></a>
+<ul>
+<li><a href="project.html#search-bar-and-button">1. Search Bar and Button<span></span></a></li>
+<li><a href="project.html#api-call">2. API Call<span></span></a></li>
+<li><a href="project.html#city-information">3. City Information<span></span></a></li>
+<li><a href="project.html#forecast-information">4. Forecast Information<span></span></a></li>
+</ul></li>
+<li class="chapter" data-level="4.3" data-path="project.html"><a href="project.html#curriculum"><i class="fa fa-check"></i><b>4.3</b> Curriculum<span></span></a>
+<ul>
+<li><a href="project.html#web-dev-coding-introduction">04.05.2022 - Web-Dev Coding Introduction<span></span></a></li>
+<li><a href="project.html#coding-meetup">18.05.2022 - 1. Coding Meetup<span></span></a></li>
+<li><a href="project.html#coding-meetup-1">01.06.2022 - 2. Coding Meetup<span></span></a></li>
+<li><a href="project.html#coding-meetup-2">15.06.2022 - 3. Coding Meetup<span></span></a></li>
+<li><a href="project.html#coding-meetup-3">29.06.2022 - 4. Coding Meetup<span></span></a></li>
+</ul></li>
+</ul></li>
+<li class="chapter" data-level="5" data-path="additional-resources.html"><a href="additional-resources.html"><i class="fa fa-check"></i><b>5</b> Additional Resources<span></span></a>
+<ul>
+<li class="chapter" data-level="5.1" data-path="additional-resources.html"><a href="additional-resources.html#git-and-github"><i class="fa fa-check"></i><b>5.1</b> Git and GitHub<span></span></a></li>
+<li class="chapter" data-level="5.2" data-path="additional-resources.html"><a href="additional-resources.html#json"><i class="fa fa-check"></i><b>5.2</b> JSON<span></span></a></li>
+<li class="chapter" data-level="5.3" data-path="additional-resources.html"><a href="additional-resources.html#font-awesome"><i class="fa fa-check"></i><b>5.3</b> Font Awesome<span></span></a></li>
+</ul></li>
+<li class="divider"></li>
+<li><a href="https://tech-academy.io/" target="blank">&copy 2022 TechAcademy e.V.</a></li>
+
+</ul>
+
+      </nav>
+    </div>
+
+    <div class="book-body">
+      <div class="body-inner">
+        <div class="book-header" role="navigation">
+          <h1>
+            <i class="fa fa-circle-o-notch fa-spin"></i><a href="./">Weather App Project SoSe22</a>
+          </h1>
+        </div>
+
+        <div class="page-wrapper" tabindex="-1" role="main">
+          <div class="page-inner">
+
+            <section class="normal" id="section-">
+<div id="tools" class="section level1 hasAnchor" number="3">
+<h1><span class="header-section-number">Chapter 3</span> Tools<a href="tools.html#tools" class="anchor-section" aria-label="Anchor link to header"></a></h1>
+<div id="ide" class="section level2 hasAnchor" number="3.1">
+<h2><span class="header-section-number">3.1</span> IDE<a href="tools.html#ide" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>Now that you know the basics of Web Development you are ready to go and write some code!</p>
+<p>But there is still a question left to answer: Where do programmers write their code?</p>
+<p>As we have already pointed out, you could start programming in the default text editor of your operating system, however take our word when we say: Don’t. You will regret it. Most developers use an Integrated Development Environment (IDE) to write code because it comes with a lot of handy features that help developers code faster and cleaner. Once you get used to an IDE, you will never look back. Let’s look at some reasons they’re so handy.</p>
+<p><strong>1. Graphical User Interface</strong><br />
+The GUI of an IDE has been designed in a way that allows you to see your project directory, editor and terminal all at once. This makes it very easy to navigate between the different html, css and javascript files.</p>
+<p><strong>2. Autocomplete</strong><br />
+If the IDE knows your programming language it can anticipate what you are going to type next and thus allow for faster development.</p>
+<p><strong>3. Syntax Highlighting</strong><br />
+An IDE that knows the syntax of your programming language can provide visual cues. Keywords, words that have special meaning like if, for or while in JavaScript, are highlighted with different colors.</p>
+<p><strong>4. Debugging</strong><br />
+No one can avoid to write code without errors. IDEs provide hints while coding to prevent errors before compilation and help you with debugging afterwards.</p>
+<p>Some popular IDEs for Web Development are Visual Studio Code, Vim and Sublime Text 3. In the Udemy course your instructor will use Visual Studio Code. Feel free to check it out <a href="https://code.visualstudio.com/">here</a>.</p>
+<p>For this course and your project, you will use the online code editor <a href="https://codesandbox.io/">CodeSandbox</a>. We will set up the environment together in the first Meetup. This IDE is based on the same platform as Visual Studio Code, but offers some additional functionalities. The user interface has been designed in a way that allows you to see your file directory, editor, and your executed program all at once. CodeSandbox allows you to create teams that can not only access the same files but also make it possible to have live coding session together. To sign up you only need a free Github account, which you can create in a matter of seconds.</p>
+</div>
+<div id="udemy" class="section level2 hasAnchor" number="3.2">
+<h2><span class="header-section-number">3.2</span> Udemy<a href="tools.html#udemy" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>For this course you will be working with the <a href="https://www.udemy.com/course/the-web-developer-bootcamp/">The Web Development Bootcamp 2022</a> on Udemy.</p>
+<p>This course is filled with a ton of content. For our project we are only focusing on the front-end so you can naturally ignore (for now) the later half of the course, which exclusively deals with the back-end. We encourage you to do all the exercises you will encounter in between. You are going to learn a lot by doing the exercises and programming on your project will become far simpler.</p>
+<p>The following sections should leave you with enough knowledge to complete your project:</p>
+<table>
+<thead>
+<tr class="header">
+<th>Section Name</th>
+<th>Duration (h)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>1. Course Orientation</td>
+<td>0.5</td>
+</tr>
+<tr class="even">
+<td>2. An Introduction to Web Development</td>
+<td>0.75</td>
+</tr>
+<tr class="odd">
+<td>3. HTML: The Essentials</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>4. HTML: Next Steps &amp; Semantics</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>5. HTML: Forms &amp; Tables</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>6. CSS: The Very Basics</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>7. CSS: The World of CSS Selectors</td>
+<td>1.25</td>
+</tr>
+<tr class="even">
+<td>8. The CSS Box Model</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>10. Responsive CSS &amp; Flexbox</td>
+<td>1.25</td>
+</tr>
+<tr class="even">
+<td>14. JavaScript Basics!</td>
+<td>1</td>
+</tr>
+<tr class="odd">
+<td>15. JavaScript String and More</td>
+<td>0.75</td>
+</tr>
+<tr class="even">
+<td>16. JavaScript Decision Making</td>
+<td>1.25</td>
+</tr>
+<tr class="odd">
+<td>17. JavaScript Arrays</td>
+<td>1</td>
+</tr>
+<tr class="even">
+<td>18. JavaScript Object Literals</td>
+<td>0.5</td>
+</tr>
+<tr class="odd">
+<td>19. JavaScript Repeating Stuff With Loops</td>
+<td>1.5</td>
+</tr>
+<tr class="even">
+<td>20. NEW: Introducing Functions</td>
+<td>0.5</td>
+</tr>
+<tr class="odd">
+<td>22. Callbacks &amp; Array Methods</td>
+<td>1.5</td>
+</tr>
+<tr class="even">
+<td>24. Introducing The World Of The DOM</td>
+<td>1.75</td>
+</tr>
+<tr class="odd">
+<td>25. The Missing Piece: DOM Events</td>
+<td>1.75</td>
+</tr>
+<tr class="even">
+<td>27. Async JavaScript: Oh Boy!</td>
+<td>1.5</td>
+</tr>
+<tr class="odd">
+<td>28. AJAX and APIs</td>
+<td>1.5</td>
+</tr>
+</tbody>
+</table>
+</div>
+<div id="api" class="section level2 hasAnchor" number="3.3">
+<h2><span class="header-section-number">3.3</span> API<a href="tools.html#api" class="anchor-section" aria-label="Anchor link to header"></a></h2>
+<p>For this semester project you will also need to learn about APIs. But what exactly is an API? An API (Application Programming Interface) allows different devices to connect to each other and send, update and request data from one to the other. You can think of it as a waiter in a restaurant. The waiter takes and understands your order, delivers it to the kitchen and comes back with the requested order. APIs function in a similar way.</p>
+<div id="how-do-we-get-the-data" class="section level3 unnumbered hasAnchor">
+<h3>How do we get the data?<a href="tools.html#how-do-we-get-the-data" class="anchor-section" aria-label="Anchor link to header"></a></h3>
+<p>Every API is unique but if you understand how to obtain output from one API you will know how to get data from all.
+For the most part, APIs are accessed through URLs, and the specifics of how to query these URLs change based on the specific service you are using. For example, the <a href="https://openweathermap.org/api">OpenWeatherMap API</a>, that we will be using in our project, has several types of data that you can request. To get the current weather in London, type in the following URL into your browser.</p>
+<pre><code>api.openweathermap.org/data/2.5/weather?q=London</code></pre>
+<p>You will get an error message, prompting you to use an API key. Go ahead and <a href="https://home.openweathermap.org/users/sign_up">create an account</a> to obtain an API key from their free tier. Once the key has been activated, which can take up to 2 hours, try making a new request with the city of your choice AND the API key passed in as query string parameters, like the example above.</p>
+<pre><code>api.openweathermap.org/data/2.5/weather?q=London&amp;APPID=YOUR_API_KEY_HERE</code></pre>
+<p>Congrats, you have made your first API request!</p>
+<p>So how do we actually get the data from an API into our code?</p>
+<p>In JavaScript we use the <a href="https://developer.mozilla.org/de/docs/Web/API/Fetch_API">Fetch API</a> to make our API call. You will learn more about how to use it in section <a href="https://www.udemy.com/course/the-web-developer-bootcamp/learn/lecture/22051352#overview">28</a> of the Udemy course which will also go over <a href="additional-resources.html#json">JSON</a>, the text format of the weather data.<br />
+To provide you with a template for later on and as a reminder, this is one way of how to deal with fetch:</p>
+<div class="sourceCode" id="cb15"><pre class="sourceCode javascript"><code class="sourceCode javascript"><span id="cb15-1"><a href="tools.html#cb15-1" aria-hidden="true" tabindex="-1"></a><span class="kw">async</span> <span class="kw">function</span> <span class="fu">exampleAPICall</span>() {</span>
+<span id="cb15-2"><a href="tools.html#cb15-2" aria-hidden="true" tabindex="-1"></a>  <span class="cf">try</span> {</span>
+<span id="cb15-3"><a href="tools.html#cb15-3" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> response <span class="op">=</span> <span class="cf">await</span> <span class="fu">fetch</span>(</span>
+<span id="cb15-4"><a href="tools.html#cb15-4" aria-hidden="true" tabindex="-1"></a>      <span class="st">&quot;https://api.openweathermap.org/data/2.5/weather?q=London&amp;AAPID=YOUR_API_KEY_HERE&quot;</span></span>
+<span id="cb15-5"><a href="tools.html#cb15-5" aria-hidden="true" tabindex="-1"></a>    )<span class="op">;</span></span>
+<span id="cb15-6"><a href="tools.html#cb15-6" aria-hidden="true" tabindex="-1"></a>    <span class="kw">const</span> data <span class="op">=</span> <span class="cf">await</span> response<span class="op">.</span><span class="fu">json</span>()<span class="op">;</span></span>
+<span id="cb15-7"><a href="tools.html#cb15-7" aria-hidden="true" tabindex="-1"></a>    <span class="co">/* your code here to work with the data */</span></span>
+<span id="cb15-8"><a href="tools.html#cb15-8" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">catch</span> (error) {</span>
+<span id="cb15-9"><a href="tools.html#cb15-9" aria-hidden="true" tabindex="-1"></a>    <span class="bu">console</span><span class="op">.</span><span class="fu">log</span>(error)<span class="op">;</span></span>
+<span id="cb15-10"><a href="tools.html#cb15-10" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb15-11"><a href="tools.html#cb15-11" aria-hidden="true" tabindex="-1"></a>}</span></code></pre></div>
+
+</div>
+</div>
+</div>
+            </section>
+
+          </div>
+        </div>
+      </div>
+<a href="whats-web-development.html" class="navigation navigation-prev " aria-label="Previous page"><i class="fa fa-angle-left"></i></a>
+<a href="project.html" class="navigation navigation-next " aria-label="Next page"><i class="fa fa-angle-right"></i></a>
+    </div>
+  </div>
+<script src="libs/gitbook-2.6.7/js/app.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/clipboard.min.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-search.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-sharing.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-fontsettings.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-bookdown.js"></script>
+<script src="libs/gitbook-2.6.7/js/jquery.highlight.js"></script>
+<script src="libs/gitbook-2.6.7/js/plugin-clipboard.js"></script>
+<script>
+gitbook.require(["gitbook"], function(gitbook) {
+gitbook.start({
+"sharing": {
+"github": false,
+"facebook": true,
+"twitter": true,
+"linkedin": false,
+"weibo": false,
+"instapaper": false,
+"vk": false,
+"whatsapp": false,
+"all": ["facebook", "twitter", "linkedin", "weibo", "instapaper"]
+},
+"fontsettings": {
+"theme": "white",
+"family": "sans",
+"size": 2
+},
+"edit": {
+"link": null,
+"text": null
+},
+"history": {
+"link": null,
+"text": null
+},
+"view": {
+"link": null,
+"text": null
+},
+"download": ["weather_app.pdf"],
+"search": {
+"engine": "fuse",
+"options": null
+},
+"toc": {
+"collapse": "subsection",
+"download": "pdf"
+}
+});
+});
+</script>
+
+</body>
+
+</html>
