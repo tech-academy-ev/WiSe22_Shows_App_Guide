@@ -1,3 +1,8 @@
+---
+output:
+  pdf_document: default
+  html_document: default
+---
 # Project
 
 ## Project introduction
@@ -68,7 +73,7 @@ The necessary videos are around 5 hours. You have 3 weeks from the first Coding 
 ### 11.01.2023 - 3. Coding Meetup {-}
 
 #### Udemy Course {-}
-You should have watched Section 19-23 by now.
+You should have watched Section 19-24 by now.
 
 The necessary videos are around 5 hours. You have 4 weeks from the second Coding Meetup until the third Coding Meetup.
 
@@ -83,9 +88,9 @@ The necessary videos are around 5 hours. You have 4 weeks from the second Coding
 ### 01.02.2023 - 4. Coding Meetup {-}
 
 #### Udemy Course {-}
-You should have watched Section 24-25 by now.
+You should have watched Section 25 by now.
 
-The necessary videos are around 4 hours. You have 3 weeks from the third Coding Meetup until the fourth Coding Meetup.
+The necessary videos are around 2 hours. You have 3 weeks from the third Coding Meetup until the fourth Coding Meetup.
 
 
 #### Action {-}

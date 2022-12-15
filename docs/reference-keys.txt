@@ -11,9 +11,9 @@ api
 project
 project-introduction
 minimal-requirements
+more-ideas
 curriculum
 additional-resources
 git-and-github
 json
 font-awesome
-more-ideas
