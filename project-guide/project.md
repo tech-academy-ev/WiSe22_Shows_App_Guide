@@ -1,0 +1,106 @@
+# 🔬 Project
+
+### Project introduction
+
+As mentioned before, this semester you will work on a show website. Use everything you’ve learned in the Udemy course to create a show streaming app using the TV Maze API, that we have looked into in the [API Section](https://tech-academy-ev.github.io/WiSe22\_Shows\_App\_Guide/tools.html#api). To complete this course, you are asked to meet the defined requirements. We will lay out the minimal requirements as well as give some inspiration for further development, make this project your own! Use this chapter as a rough guideline on how far you should progress everytime we meet up.
+
+### Minimal Requirements
+
+#### 1. Search Bar and Button
+
+You should be able to look up any show name and by the press of a button or the enter key display all returned shows from the API that match the search term. Look into HTML forms!
+
+#### 2. API Call
+
+In order to get the data for the weather we require you to use the TV Maze API. Check out their documentation [here](https://www.tvmaze.com/api).
+
+#### 3. Rendering the Shows
+
+After you fetch all necessary data from the API we want you to display it in an appropriate section. Use the name of the show and a picture. And make it accessible on the page.
+
+#### 4. Modal with more information
+
+Another requirement for the project is a modal that pops up when you click on a show. It should give a few more information about the show that was clicked. Look at the documentation of the API to get an idea of which information you can display in the modal.
+
+### More Ideas
+
+Of course you can always add more features to your project. We have collected some ideas here. If you have the time you can add some of these functionalities.
+
+* Save your favourite shows or your search history in localstorage
+* Add an loading spinner animation while waiting for the data from the API
+* Allow users to switch between dark and light mode on your website
+* Make your website beautiful and responsive. Use media queries and custom fonts
+
+If you have questions regarding any of the requirements, you can ask your mentors anytime!
+
+### Curriculum
+
+In the next months we will have 4+1 meetups. The following is intended to give you some direction on what we think would be a good working-pace for your project. We won’t spoil much here, but instead give some hints and make you aware of problems you may encounter.
+
+You don’t need to watch the whole course but if you have the time it can be really helpful. We tried to cut some of the less important stuff (for this project) out of the course. We will also tell you how much time you need to plan for watching the sections. But remember that you might need more time.
+
+#### 09.11.2022 - Web-Dev Coding Introduction
+
+**Udemy Course**
+
+You don’t need to watch any sections for the Introduction Meetup. We will cover the sections 3, 4 and 5 from the Udemy Course together in class. We will go over the basics of Web Development and HTML. Moreover you will build your first website. Please remember to bring your own laptop!
+
+#### 23.11.2022 - 1. Coding Meetup
+
+**Udemy Course**
+
+You should have watched at least Section 1 and 2, 6-8 and 10 by now. You don’t necessarily need to watch the 3-5 because we will talk about them in the Introduction Meetup.
+
+The necessary videos are around 5 hours. You have 2 weeks from the Introduction Meetup until the first Coding Meetup.
+
+**Action**
+
+1. Make a sketch, what your future website should look like and with annotations how some elements behave once you interact with them. If you need more inspiration, search for streaming websites. Think about what you would do differently and how features could be improved.
+2. Set up a blank index.html document and try to model your sketch from Step 1 with HTML.
+3. Try to group content that belongs together into sections. Dont use divs everywhere, remember [this](https://www.udemy.com/course/the-web-developer-bootcamp/learn/lecture/21919368#overview) from the Udemy course and give your layout some meaning! Instead of getting show data from the API, make up the data for a show of your choice.
+4. If you’ve gotten to the CSS part of the course, create a style.css file and add some styling for the layout with Flexbox or Grid (remember to link it within the HTML file).
+
+#### 14.12.2022 - 2. Coding Meetup
+
+**Udemy Course**
+
+You should have watched Section 14-18 by now.
+
+The necessary videos are around 5 hours. You have 3 weeks from the first Coding Meetup until the second Coding Meetup.
+
+**Action**
+
+1. Finish the styling of your page with hardcoded shows. Try working on the modal. You don’t to work with the API for now.
+2. You can try some animations if you are not ready with JavaScript. Use Google or ask your mentor for any idea that you have.
+3. If you have enough JavaScript knowledge you can try writing your first function. If you haven’t already, add a script.js file and link it within the HTML document.
+
+#### 11.01.2023 - 3. Coding Meetup
+
+**Udemy Course**
+
+You should have watched Section 19-23 by now.
+
+The necessary videos are around 5 hours. You have 4 weeks from the second Coding Meetup until the third Coding Meetup.
+
+**Action**
+
+1. If you haven’t already, go over the [API Section](https://tech-academy-ev.github.io/WiSe22\_Shows\_App\_Guide/tools.html#api) now.
+2. In the script.js file, write the functions that hit the API. You’re going to want functions that can take a search term and return the data for that term. For now, just console.log() the information.
+3. Write the functions that process the JSON data you’re getting from the API and return an object with only the data you require for your app.
+4. Connect the search bar you’ve created to the function. Still just console.log() the result for now.
+5. Now that you have a pretty good grip on the API, remove the hardcoded data we added before and display the show information on your website!
+
+#### 01.02.2023 - 4. Coding Meetup
+
+**Udemy Course**
+
+You should have watched Section 24-25 by now.
+
+The necessary videos are around 4 hours. You have 3 weeks from the third Coding Meetup until the fourth Coding Meetup.
+
+**Action**
+
+1. Finish up any left-over tasks from before.
+2. Make this project your own! There are many additional features you can add. [Here](https://tech-academy-ev.github.io/WiSe22\_Shows\_App\_Guide/project.html#more-ideas) are some ideas
+
+* Surprise us! Be creative and truly make this project your own!
